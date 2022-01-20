@@ -24,8 +24,8 @@ import retrofit2.Response;
 public class FormFragment extends Fragment {
 
     private FragmentFormBinding binding;
-    private static final int USER_ID = 6;
-    private static final int GROUP_ID = 6;
+    private static final int USER_ID = 10;
+    private static final int GROUP_ID = 5;
     private Post postTwo;
 
     public FormFragment() {
@@ -34,7 +34,6 @@ public class FormFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -94,9 +93,7 @@ public class FormFragment extends Fragment {
                         }
 
                         @Override
-                        public void onFailure(Call<Post> call, Throwable t) {
-
-                        }
+                        public void onFailure(Call<Post> call, Throwable t) { }
                     });
                 }
             }
